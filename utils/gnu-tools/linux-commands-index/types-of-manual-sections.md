@@ -1,0 +1,10 @@
+# Man and info pages
+
+Sections
+- NAME
+- SYNOPSIS
+- DESCRIPTION
+- COMMAND-LINE OPTIONS
+- ENVIRONMENT
+- FILES
+- SEE ALSO
