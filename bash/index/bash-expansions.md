@@ -1,33 +1,42 @@
 # Bash :: Expansions
 
-* command-line processing
-  - history expansion
-  - alias expansion
-  - the command-line processing
+3.5 Shell Expansions
+https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions
 
-* command-line processing
-  word splitting
-  quote removal
-  substitutions
-    arithemtic substitution
-    command substitution
-    process substitution
-  variable and parameter expansion
-    parameter expansion
-      bash parameter expansion
-      array parameter
-      special parameter expansion
-      positional parameters
-    variable expansion
-      environment variable expansion
-      operator expansion (redirections)
-      shell internal variables
-  filename generation
-    tilde expansion
-    brace expansion
-    globs expansion
-    wildcard expansion
-    pathname expansion
+Expansion is performed on the command line after it has been split into tokens. 
+
+There are several kinds of expansion performed:
+- alias expansion (should be first)
+- brace expansion
+- then from left to right:
+  - tilde expansion
+  - parameter and variable expansion
+  - arithmetic expansion
+  - command substitution
+  - process substitution
+- word splitting
+- filename expansion
+  - globbing
+    - wildcard expansion
+    - generation of filenames
+    - ls *.sh      The `*` is any number of characters widcard
+    - ls *.htm?    The `?` is 1 character widcard
+    - ls *.[oh]    Brackets contain allowed chars
+- quote removal
+  - removing backslashes
+  - removing quotation
+  - removing escapes
+
+When is this performed?
+- *alias expansion* (at the time an alias is expanded, the rest of the command line has not yet had variable or wildcard expansions done).
+- *history expansion* (using `!` and other symbols on the cmdline)
+- *redirections* (operator expansions)
 
 
-At the time when the alias is expanded, the rest of the command line has not had variable or wildcard expansions done.
+The order of expansions is: brace expansion; tilde expansion, parameter and variable expansion, arithmetic expansion, command substitution (done in a left-to-right fashion); word splitting; filename expansion. After all the expansions, quote removal is performed.
+
+On systems that can support it, there is an additional expansion available: *process substitution*. This is performed at the same time as tilde, parameter, variable, and arithmetic expansion and command substitution.
+
+After these expansions, *quote characters* present in the original word are removed unless they have been quoted themselves (quote removal).
+
+Only brace expansion, word splitting, and filename expansion can increase the number of words of the expansion; other expansions expand a single word to a single word. The only exceptions to this are the expansions of `"$@"` and `$*` and `"${name[@]}"` and `${name[*]}`.

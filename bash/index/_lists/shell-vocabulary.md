@@ -1,6 +1,6 @@
 # Shell vocabulary
 
-Shell vocabulary derived from the names of common unix and gnu/linux utils, and general terminology pertaining to shell, terminals and consoles.
+*Shell vocabulary* derived from the names of common utils and general terminology pertaining to the shell.
 
 apropos
 awk

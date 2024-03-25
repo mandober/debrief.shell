@@ -1,0 +1,1 @@
+https://unix.stackexchange.com/questions/138463/do-parentheses-really-put-the-command-in-a-subshell/138498#138498

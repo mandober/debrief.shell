@@ -1,0 +1,270 @@
+# Bash builtins :: Table
+
+- Bash Builtins
+- Bourne Shell Builtins
+- Bash History Builtins
+- Job Control Builtins
+- Programmable Completion Builtins
+- Directory Stack Builtins
+- The Set Builtin
+- The Shopt Builtin
+
+
+Name      | Origin or Purpose                | Notes
+----------|----------------------------------|------------------------------
+alias     | Bash Builtins                    | NA
+bind      | Bash Builtins                    | NA
+builtin   | Bash Builtins                    | NA
+caller    | Bash Builtins                    | NA
+command   | Bash Builtins                    | NA
+declare   | Bash Builtins                    | NA
+echo      | Bash Builtins                    | NA
+enable    | Bash Builtins                    | NA
+help      | Bash Builtins                    | NA
+let       | Bash Builtins                    | NA
+local     | Bash Builtins                    | NA
+logout    | Bash Builtins                    | NA
+mapfile   | Bash Builtins                    | NA
+printf    | Bash Builtins                    | NA
+read      | Bash Builtins                    | NA
+readarray | Bash Builtins                    | NA
+source    | Bash Builtins                    | NA
+type      | Bash Builtins                    | NA
+typeset   | Bash Builtins                    | NA
+ulimit    | Bash Builtins                    | NA
+unalias   | Bash Builtins                    | NA
+fc        | Bash History Builtins            | NA
+history   | Bash History Builtins            | NA
+`.`       | Bourne Shell Builtins            | NA
+`:`       | Bourne Shell Builtins            | NA
+`[`       | Bourne Shell Builtins            | NA
+break     | Bourne Shell Builtins            | NA
+cd        | Bourne Shell Builtins            | NA
+continue  | Bourne Shell Builtins            | NA
+eval      | Bourne Shell Builtins            | NA
+exec      | Bourne Shell Builtins            | NA
+exit      | Bourne Shell Builtins            | NA
+export    | Bourne Shell Builtins            | NA
+getopts   | Bourne Shell Builtins            | NA
+hash      | Bourne Shell Builtins            | NA
+pwd       | Bourne Shell Builtins            | NA
+readonly  | Bourne Shell Builtins            | NA
+return    | Bourne Shell Builtins            | NA
+shift     | Bourne Shell Builtins            | NA
+test      | Bourne Shell Builtins            | NA
+times     | Bourne Shell Builtins            | NA
+trap      | Bourne Shell Builtins            | NA
+umask     | Bourne Shell Builtins            | NA
+unset     | Bourne Shell Builtins            | NA
+dirs      | Directory Stack Builtins         | NA
+popd      | Directory Stack Builtins         | NA
+pushd     | Directory Stack Builtins         | NA
+bg        | Job Control Builtins             | NA
+disown    | Job Control Builtins             | NA
+fg        | Job Control Builtins             | NA
+jobs      | Job Control Builtins             | NA
+kill      | Job Control Builtins             | NA
+suspend   | Job Control Builtins             | NA
+wait      | Job Control Builtins             | NA
+compgen   | Programmable Completion Builtins | NA
+complete  | Programmable Completion Builtins | NA
+compopt   | Programmable Completion Builtins | NA
+set       | The Set Builtin                  | NA
+shopt     | The Shopt Builtin                | NA
+
+
+Builtin   | Origin | Executable  | Alias       | Notes
+----------|--------|-------------|-------------|---------------
+:         | Bourne |             | true        |
+.         | Bourne |             | source      |
+[         | Bourne | /bin/[      | test        |
+alias     |        |             |             |
+bg        |        |             |             |
+bind      |        |             |             |
+break     | Bourne |             |             |
+builtin   |        |             |             |
+caller    |        |             |             |
+cd        | Bourne |             |             |
+command   |        |             |             |
+compgen   |        |             |             |
+complete  |        |             |             |
+compopt   |        |             |             |
+continue  | Bourne |             |             |
+declare   |        |             |             |
+dirs      |        |             |             |
+disown    |        |             |             |
+echo      |        |             |             |
+enable    |        |             |             |
+eval      | Bourne |             |             |
+exec      | Bourne |             |             |
+exit      | Bourne |             |             |
+export    | Bourne |             |             |
+false     |        |             |             |
+fc        |        |             |             |
+fg        |        |             |             |
+getopts   | Bourne |             |             |
+hash      | Bourne |             |             |
+help      |        |             |             |
+history   |        |             |             |
+jobs      |        |             |             |
+kill      |        |             |             |
+let       |        |             |             |
+local     |        |             |             |
+logout    |        |             |             |
+mapfile   |        |             |             |
+popd      |        |             |             |
+printf    |        |             |             |
+pushd     |        |             |             |
+pwd       | Bourne |             |             |
+read      |        |             |             |
+readarray |        |             |             |
+readonly  | Bourne |             |             |
+return    | Bourne |             |             |
+set       |        |             |             |
+shift     | Bourne |             |             |
+shopt     |        |             |             |
+source    |        |             |             |
+suspend   |        |             |             |
+test      | Bourne |             | test        |
+times     | Bourne |             |             |
+trap      | Bourne |             |             |
+true      |        |             |             |
+type      |        |             |             |
+typeset   |        |             |             |
+ulimit    |        |             |             |
+umask     | Bourne |             |             |
+unalias   |        |             |             |
+unset     | Bourne |             |             |
+wait      |        |             |             |
+
+
+
+## Classification of builtins
+
+- .
+- :
+- [
++ alias
+- bg
++ bind
+- break
++ builtin
++ caller
+- cd
++ command
+- compgen
+- complete
+- compopt
+- continue
++ declare
+- dirs
+- disown
++ echo
++ enable
+- eval
+- exec
+- exit
+- export
+- false
+- fc
+- fg
+- getopts
+- hash
++ help
+- history
+- jobs
+- kill
++ let
++ local
++ logout
++ mapfile
+- popd
++ printf
+- pushd
+- pwd
++ read
++ readarray
+- readonly
+- return
+- set
+- shift
+- shopt
++ source
+- suspend
+- test
+- times
+- trap
+- true
++ type
++ typeset
++ ulimit
+- umask
++ unalias
+- unset
+- wait
+
+
+
+## Index of all builtins
+
+- .
+- :
+- [
+- alias
+- bg
+- bind
+- break
+- builtin
+- caller
+- cd
+- command
+- compgen
+- complete
+- compopt
+- continue
+- declare
+- dirs
+- disown
+- echo
+- enable
+- eval
+- exec
+- exit
+- export
+- false
+- fc
+- fg
+- getopts
+- hash
+- help
+- history
+- jobs
+- kill
+- let
+- local
+- logout
+- mapfile
+- popd
+- printf
+- pushd
+- pwd
+- read
+- readarray
+- readonly
+- return
+- set
+- shift
+- shopt
+- source
+- suspend
+- test
+- times
+- trap
+- true
+- type
+- typeset
+- ulimit
+- umask
+- unalias
+- unset
+- wait

@@ -1,15 +1,16 @@
 # w
 
-- name: `w` (the only single-letter command)
-- type: command
-- kind: program
+- name: `w`
+- note: `w` is the only single-letter preinstalled command
+- type: command, executable
+- orig: preinstalled
 - desc: shows who is logged on and what they are doing
 
 ```bash
 # man page = info page
 man 1 w
 
-# help (backslash to circumvent a possible alias)
+# help (backslash circumvents aliasing making sure to call 'w')
 \w --help
 
 USAGE: w [options]
@@ -44,16 +45,13 @@ w [options] user [...]
 
 ## DESCRIPTION
 
-`w` displays information about the users currently on the machine, and their processes. The header shows, in this order, the current time, how long the
- system has been running, how many users are currently logged on, and the system load averages for the past 1, 5, and 15 minutes.
+`w` displays information about the users currently on the machine, and their processes. The header shows, in this order, the current time, how long the system has been running, how many users are currently logged on, and the system load averages for the past 1, 5, and 15 minutes.
 
- The following entries are displayed for each user: login name, the tty name, the remote host, login time, idle time, JCPU, PCPU, and the command line of
- their current process.
+The following entries are displayed for each user: login name, the tty name, the remote host, login time, idle time, JCPU, PCPU, and the command line of their current process.
 
- The JCPU time is the time used by all processes attached to the tty. It does not include past background jobs, but does include currently running back‐
- ground jobs.
+The JCPU time is the time used by all processes attached to the tty. It does not include past background jobs, but does include currently running background jobs.
 
- The PCPU time is the time used by the current process, named in the "what" field.
+The PCPU time is the time used by the current process, named in the "what" field.
 
 ## COMMAND-LINE OPTIONS
 

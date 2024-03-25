@@ -1,37 +1,64 @@
 # Bash :: Shell artefacts
 
-**Shell artefacts** is a genric name for any and all words and entities around and about the shell.
+**Shell artefacts** (aka *shartefacts*) is a made-up name for generic shell entities and, generally, for any aspect and concept related to shell.
 
-* Shell aspects, aspects of functionality
-  - Navigation
-    - Interactive Navigation    In
-    - CommandLine Navigation    Cn
-    - Directory Stack           Ds
-  - History
-    - Interactive History       Ih
-  - Completion
-    - Programmable Completion   Pc
-  - Config
-    - Set builtin
-    - Shopt builtin
-  - Job Control                 Jc
+**Bourne artefacts** is a name for portable, highly compatible, shell entities and, generally, any aspect and concept related to Bourne shell.
+
+**Bash artefacts** is a name for shell entities and, generally, any aspect and concept related to bash shell, including bash-specific idiosyncrasies (aka bashisms).
 
 
+```
+ancient period | evolution | modernization perdiod
+
+csh  tcsh            ash          fish   mosh  shoe
+   ↘ ↓              ↗           nu    oil   gosh   sheesh
+    sh         |> bash     |>     zsh
+   ↗ ↑              ↘          xonsh    pwsh    hashish
+ksh  mksh            dash         elvish      wish
+```
+
+
+Shell features (aspects of shell functionality)
+- command line editing
+  - keybindings
+  - modes (vi, emacs)
+  - magic space
+- variable expansion
+  - word-splitting
+  - quoting mechanics
+  - tilde expansion
+  - arithetic expansion
+  - process substitution
+- redirections
+- shell builtins
+- command-line completions
+  - programmable completions
+- maintaining directory stack
+- command-line history maintenance
+  - command-line history recall
+  - command-line history expansion and quick substitution
+- job control
+- configuration (set, shopt)
+- aliases
+- user functions
+
+
+Shell words/tokens
 - Raw input
-  - character
-  - metacharacter
-  - punctuation
-  - word
-  - token
-  - shell-word
-  - bash-word
-  - command-line-input
-  - bash-token
-  - bash-reserved-word
-  - bash-keyword
-  - bash-metacharacter
-  - bash-punctuation
-  - bash-command
+- character
+- metacharacter
+- punctuation
+- word
+- token
+- shell-word
+- bash-word
+- command-line-input
+- bash-token
+- bash-reserved-word
+- bash-keyword
+- bash-metacharacter
+- bash-punctuation
+- bash-command
 
 - Command searching
   1. alias

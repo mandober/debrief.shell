@@ -1,61 +1,58 @@
 # Bash :: Phrases
 
-Vocabulary of custom terms and phrases as used in this debrief.
-
-## bash-the-shell
-The `bash` shell proper without the accessories, the primary (if perhaps only) is the `readline` utility.
-
-## bash-package
-The bash-package comes with the bash shell proper, `bash-the-shell`, which is bundled with the readline utility that controls line editing facilities.
-
-## bash-readline
-Although the "readline" utility began as a part of bash shell it has been developed and made available for a while now as the standalone application. It is the most popular utility (but not the only one?) for managing command line editing. Besides supporting the more advanced line editing features, it also manages the set of readline-functions and readline-variables
-
-facilities.
-
-for enabling 
-
-
 bash-alias
 bash-function
+bash-history-builtin
 bash-hook
+bash-interactive-mode
+bash-interactive-shell
 bash-keyword
+bash-login-mode
+bash-login-shell
 bash-metachar
-bash-punctuation
-bash-symbol
-
 bash-modes
-  bash-posix-mode
-  bash-restricted-mode
-  bash-remote-mode
-
-  bash-compatibility-modes (compatibility with bash previous versions)
-  bash-version-modes
-
-  bash-interactive-mode
-  bash-noninteractive-mode
-  bash-login-mode
-  bash-nonlogin-mode
-
-  bash-interactive-shell
-  bash-noninteractive-shell
-  bash-login-shell
-  bash-nonlogin-shell
-  bash-scripting-shell
-
-
-
+bash-compatibility-modes
+bash-conformity-modes
+bash-noninteractive-mode
+bash-noninteractive-shell
+bash-nonlogin-mode
+bash-nonlogin-shell
+bash-posix-mode
+bash-punctuation
+bash-remote-mode
+bash-reserved-word
+bash-restricted-mode
+bash-scripting-shell
 bash-setopt
 bash-shellopt
+bash-word
+bash-version
+bash-trap
 
-cmdline-content
-cmdline-expansion
-cmdline-phase
+command-line
+command-line-prompt
+command-line-completion
+command-line-expansion
+command-line-processing
 
-shell-action
-shell-command
+system-call
+system-signal
+system-interrupt
+
 shell-word
 shell-token
+shell-action
+shell-command
+shell-variable
+shell-metacharacter
+shell-reserved-word
+shell-interactive
+shell-noninteractive
+shell-login
+shell-nonlogin
 
 readline-function
 readline-variable
+readline-macro
+readline-binding
+readline-editing-mode
