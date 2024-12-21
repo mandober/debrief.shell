@@ -1,1 +1,0 @@
-# Bash :: Index :: Bash variables

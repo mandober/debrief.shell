@@ -1,6 +1,6 @@
 # Shell
 
-Despite the title, this section also considers and describes all the things surrounding and related to the term "shell", primarily from the Unix, GNU, Linux, Debian, Ubuntu aspects.
+Despite the title, this section also considers and describes all the things surrounding and related to the term "shell", primarily from the Linux view.
 
 The main *aspects* this sctions deals with are
 - terminal

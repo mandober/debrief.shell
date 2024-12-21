@@ -1,1 +1,0 @@
-# Ubuntu package management :: dpkg

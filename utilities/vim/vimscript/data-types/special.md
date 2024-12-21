@@ -1,1 +1,0 @@
-# Vimscript :: Data types :: Special

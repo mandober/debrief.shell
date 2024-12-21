@@ -1,5 +1,0 @@
-# vim patterns
-
-Patterns
-- `*`
-- `*.txt`
